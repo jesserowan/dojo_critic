@@ -1,0 +1,18 @@
+{
+  "name": "videogames",
+  "version": "1.0.0",
+  "description": "videogame rating app",
+  "main": "server/server.js",
+  "scripts": {
+    "test": "echo \"we have no test\"",
+    "start": "nodemon server/server.js"
+  },
+  "author": "Jesse, Will, and Kamaria",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.15",
+    "cors": "^2.8.5"
+  }
+}
