@@ -1,4 +1,6 @@
-const mongoose = require("mongoose");
+const mongoose = require("mongoose"),
+  ReviewSchema = require('./review');
+
 
 const VideogameSchema = new mongoose.Schema({
   title: {
@@ -15,7 +17,8 @@ const VideogameSchema = new mongoose.Schema({
     type: String,
     required: [true, "Genre is required"],
     minlength: [3, "Genre must be 3 characters or longer."]
-  }
+  },
+  reviews: [ReviewSchema]
 }, {timestamps: true});
 
 mongoose.model('Videogame', VideogameSchema);

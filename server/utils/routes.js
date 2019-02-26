@@ -1,4 +1,5 @@
-const Videogames = require("../controllers/videogames");
+const Videogames = require("../controllers/videogames"),
+         Reviews = require("../controllers/reviews");
 
 module.exports = function(app){
   // videogames routes
@@ -8,4 +9,5 @@ module.exports = function(app){
   app.put('/videogames/:_id', Videogames.update);
   app.delete('/videogames/:_id', Videogames.delete);
   // TODO reviews routes
-}
+  app.post('/review/:_id', Reviews.create);
+};

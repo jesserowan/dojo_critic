@@ -1,8 +1,37 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Arial", sans-serif;
 }
 fieldset {
   margin: 20px 0;
   padding: 10px;
+}
+.button {
+  padding: 10px;
+  border: 2px solid slategray;
+  background-color: slategray;
+  color: white;
+  border-radius: 5px;
+  transition: ease .3s;
+  font-size: 14px;
+  margin-right: 5px;
+  margin-top: 10px;
+  text-decoration: none;
+}
+.button:hover {
+  background-color: white;
+  color: slategray;
+  cursor: pointer;
+}
+ul li {
+  display: inline-block;
+  line-height: 50px;
+}
+ul li a {
+  color: white;
+  text-decoration: none;
+}
+ul li a:hover {
+  color: slategrey;
 }
